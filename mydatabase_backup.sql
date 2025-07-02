@@ -563,45 +563,45 @@ UNLOCK TABLES;
 -- Table structure for table `user`
 --
 
-DROP TABLE IF EXISTS `user`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `user` (
-  `id` bigint NOT NULL AUTO_INCREMENT,
-  `uid` varchar(255) DEFAULT NULL,
-  `address` varchar(255) DEFAULT NULL,
-  `auth_provider` enum('GOOGLE','LOCAL') DEFAULT NULL,
-  `city` varchar(255) DEFAULT NULL,
-  `created_at` varchar(255) DEFAULT NULL,
-  `district` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `first_name` varchar(255) DEFAULT NULL,
-  `house_number` varchar(255) DEFAULT NULL,
-  `image_url` varchar(255) DEFAULT NULL,
-  `last_name` varchar(255) DEFAULT NULL,
-  `latitude` double DEFAULT NULL,
-  `location_address` varchar(255) DEFAULT NULL,
-  `longitude` double DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
-  `phone_number` varchar(255) DEFAULT NULL,
-  `role` enum('ADMIN','USER') DEFAULT NULL,
-  `street` varchar(255) DEFAULT NULL,
-  `village` varchar(255) DEFAULT NULL,
-  `zip_code` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
+-- DROP TABLE IF EXISTS `user`;
+-- /*!40101 SET @saved_cs_client     = @@character_set_client */;
+-- /*!50503 SET character_set_client = utf8mb4 */;
+-- CREATE TABLE `user` (
+--   `id` bigint NOT NULL AUTO_INCREMENT,
+--   `uid` varchar(255) DEFAULT NULL,
+--   `address` varchar(255) DEFAULT NULL,
+--   `auth_provider` enum('GOOGLE','LOCAL') DEFAULT NULL,
+--   `city` varchar(255) DEFAULT NULL,
+--   `created_at` varchar(255) DEFAULT NULL,
+--   `district` varchar(255) DEFAULT NULL,
+--   `email` varchar(255) DEFAULT NULL,
+--   `first_name` varchar(255) DEFAULT NULL,
+--   `house_number` varchar(255) DEFAULT NULL,
+--   `image_url` varchar(255) DEFAULT NULL,
+--   `last_name` varchar(255) DEFAULT NULL,
+--   `latitude` double DEFAULT NULL,
+--   `location_address` varchar(255) DEFAULT NULL,
+--   `longitude` double DEFAULT NULL,
+--   `name` varchar(255) DEFAULT NULL,
+--   `password` varchar(255) DEFAULT NULL,
+--   `phone_number` varchar(255) DEFAULT NULL,
+--   `role` enum('ADMIN','USER') DEFAULT NULL,
+--   `street` varchar(255) DEFAULT NULL,
+--   `village` varchar(255) DEFAULT NULL,
+--   `zip_code` varchar(255) DEFAULT NULL,
+--   PRIMARY KEY (`id`)
+-- ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+-- /*!40101 SET character_set_client = @saved_cs_client */;
 
---
--- Dumping data for table `user`
---
+-- --
+-- -- Dumping data for table `user`
+-- --
 
-LOCK TABLES `user` WRITE;
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-INSERT INTO `user` VALUES (1,'NO2FY4',NULL,NULL,NULL,'2025-05-30T02:07:56.983287098',NULL,'admin@gmail.com','Admin',NULL,NULL,'User',11.551171274128103,'HR2R+Q8H, Phnom Penh, Cambodia',104.84083110501832,'null null','$2a$10$Zpqz2ty1z0LvX9W4sr0AiOs/pdnOX83oK/iU314hoey033gNSczWG',NULL,'ADMIN',NULL,NULL,NULL),(2,'NHWQ5C',NULL,NULL,NULL,'2025-05-31T05:15:34.379008025',NULL,'sronsea123@gmail.com','សៀ ម៉េងស្រ៊ុន',NULL,'https://res.cloudinary.com/dpq5cxfaa/image/upload/v1749731675/bontub/jsrehy7youuabumoklsy.jpg','សៀ ម៉េងស្រ៊ុន',11.54727166445999,'GVWW+WX Phnom Penh, Cambodia',104.89743402387052,'សៀ ម៉េងស្រ៊ុន',NULL,NULL,'ADMIN',NULL,NULL,NULL),(3,'GDOVIA',NULL,NULL,NULL,'2025-05-31T05:19:09.335252196',NULL,'sunnengsen@gmail.com','Sunneng Sen',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLLmyhWMGbMg5vOp3uJrg0R5QKWRqrWkSft8rmxK1tDmQAfBNxn=s96-c','Sunneng Sen',11.573782862720876,'1 St 600, Phnom Penh, Cambodia',104.89495290145383,'Sunneng Sen',NULL,NULL,'USER',NULL,NULL,NULL),(4,'KH80QT',NULL,NULL,NULL,'2025-05-31T05:32:46.388343735',NULL,'sensunneng@gmail.com','Sunneng Sen',NULL,'https://lh3.googleusercontent.com/a/ACg8ocK9ZaueqEZbDvIIJrppmWwRTrJICUJEkpLNoES3xqH-OMLY5A=s96-c','Sunneng Sen',11.568377499016995,'HV9R+CP3, Phnom Penh, Cambodia',104.89161406798985,'Sunneng Sen',NULL,NULL,'USER',NULL,NULL,NULL),(5,'0GR59W',NULL,NULL,NULL,'2025-05-31T08:53:16.002909770',NULL,'sonchengchhay@gmail.com','Sun Chengchhay',NULL,'https://lh3.googleusercontent.com/a/ACg8ocKjmyDy3UaE242IWqii2D77Kj902HCEbNZTKqDjydp_iQSC9Ym-=s96-c','Sun Chengchhay',11.571031404315685,'HWCC+C4W, Phnom Penh, Cambodia',104.92047523803714,'Sun Chengchhay',NULL,NULL,'USER',NULL,NULL,NULL),(6,'18KPPY',NULL,NULL,NULL,'2025-06-02T06:12:58.917722985',NULL,'sronsmk@gmail.com','Sea MengSrun',NULL,'https://lh3.googleusercontent.com/a/ACg8ocKmZ5LEJUFwJVQ3tn5Be-cRydWWHIRbwQuHMUXJSvyo8Jtu6T8=s96-c','Sea MengSrun',11.547130083949527,'GVWW+PRP, Samdech Monireth Blvd (217), Phnom Penh, Cambodia',104.89702372650858,'Sea MengSrun',NULL,NULL,'USER',NULL,NULL,NULL),(7,'S7873G',NULL,NULL,NULL,'2025-06-03T08:02:59.768764943',NULL,'ksokheang1@gmail.com','Khuon Sokheang',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLtiw-3bqXRk0P5Mk7fxdtqF-yS2svuMw5L6gl9nGCQeNudVyAf=s96-c','Khuon Sokheang',11.723186108997517,'PWC8+VP, Mukh Kampul, Cambodia',104.91674160308841,'Khuon Sokheang',NULL,NULL,'USER',NULL,NULL,NULL),(8,'N3T3D2',NULL,NULL,NULL,'2025-06-23T13:25:55.788818452',NULL,'eisifeng@gmail.com','Sifeng Ei',NULL,'https://res.cloudinary.com/dpq5cxfaa/image/upload/v1750685185/bontub/fsjoba3p32nzngyrvqqp.jpg','',NULL,NULL,NULL,'Sifeng Ei',NULL,NULL,'USER',NULL,NULL,NULL),(9,'NI8P40',NULL,NULL,NULL,'2025-06-23T13:38:46.631584205',NULL,'rothgamer07@gmail.com','Reth Roth',NULL,'https://lh3.googleusercontent.com/a/ACg8ocI7t4eKrlqRCOv6lvS47vTvNDd9B88w85MTQ9opOHskrCV4bFU=s96-c','Reth Roth',NULL,NULL,NULL,'Reth Roth',NULL,NULL,'USER',NULL,NULL,NULL),(10,'6PWY7T',NULL,NULL,NULL,'2025-06-25T03:07:39.731051506',NULL,'menglongart@gmail.com','Art Menglong',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLb1VNIWIJLev0jLgS8YZorXniJ-1iXKwK-44J2yn9wVqU0SCdY=s96-c','Art Menglong',11.5664726,'794 Kampuchea Krom Blvd (128), Phnom Penh, Cambodia',104.8965575,'Art Menglong',NULL,NULL,'USER',NULL,NULL,NULL);
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
-UNLOCK TABLES;
+-- LOCK TABLES `user` WRITE;
+-- /*!40000 ALTER TABLE `user` DISABLE KEYS */;
+-- INSERT INTO `user` VALUES (1,'NO2FY4',NULL,NULL,NULL,'2025-05-30T02:07:56.983287098',NULL,'admin@gmail.com','Admin',NULL,NULL,'User',11.551171274128103,'HR2R+Q8H, Phnom Penh, Cambodia',104.84083110501832,'null null','$2a$10$Zpqz2ty1z0LvX9W4sr0AiOs/pdnOX83oK/iU314hoey033gNSczWG',NULL,'ADMIN',NULL,NULL,NULL),(2,'NHWQ5C',NULL,NULL,NULL,'2025-05-31T05:15:34.379008025',NULL,'sronsea123@gmail.com','សៀ ម៉េងស្រ៊ុន',NULL,'https://res.cloudinary.com/dpq5cxfaa/image/upload/v1749731675/bontub/jsrehy7youuabumoklsy.jpg','សៀ ម៉េងស្រ៊ុន',11.54727166445999,'GVWW+WX Phnom Penh, Cambodia',104.89743402387052,'សៀ ម៉េងស្រ៊ុន',NULL,NULL,'ADMIN',NULL,NULL,NULL),(3,'GDOVIA',NULL,NULL,NULL,'2025-05-31T05:19:09.335252196',NULL,'sunnengsen@gmail.com','Sunneng Sen',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLLmyhWMGbMg5vOp3uJrg0R5QKWRqrWkSft8rmxK1tDmQAfBNxn=s96-c','Sunneng Sen',11.573782862720876,'1 St 600, Phnom Penh, Cambodia',104.89495290145383,'Sunneng Sen',NULL,NULL,'USER',NULL,NULL,NULL),(4,'KH80QT',NULL,NULL,NULL,'2025-05-31T05:32:46.388343735',NULL,'sensunneng@gmail.com','Sunneng Sen',NULL,'https://lh3.googleusercontent.com/a/ACg8ocK9ZaueqEZbDvIIJrppmWwRTrJICUJEkpLNoES3xqH-OMLY5A=s96-c','Sunneng Sen',11.568377499016995,'HV9R+CP3, Phnom Penh, Cambodia',104.89161406798985,'Sunneng Sen',NULL,NULL,'USER',NULL,NULL,NULL),(5,'0GR59W',NULL,NULL,NULL,'2025-05-31T08:53:16.002909770',NULL,'sonchengchhay@gmail.com','Sun Chengchhay',NULL,'https://lh3.googleusercontent.com/a/ACg8ocKjmyDy3UaE242IWqii2D77Kj902HCEbNZTKqDjydp_iQSC9Ym-=s96-c','Sun Chengchhay',11.571031404315685,'HWCC+C4W, Phnom Penh, Cambodia',104.92047523803714,'Sun Chengchhay',NULL,NULL,'USER',NULL,NULL,NULL),(6,'18KPPY',NULL,NULL,NULL,'2025-06-02T06:12:58.917722985',NULL,'sronsmk@gmail.com','Sea MengSrun',NULL,'https://lh3.googleusercontent.com/a/ACg8ocKmZ5LEJUFwJVQ3tn5Be-cRydWWHIRbwQuHMUXJSvyo8Jtu6T8=s96-c','Sea MengSrun',11.547130083949527,'GVWW+PRP, Samdech Monireth Blvd (217), Phnom Penh, Cambodia',104.89702372650858,'Sea MengSrun',NULL,NULL,'USER',NULL,NULL,NULL),(7,'S7873G',NULL,NULL,NULL,'2025-06-03T08:02:59.768764943',NULL,'ksokheang1@gmail.com','Khuon Sokheang',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLtiw-3bqXRk0P5Mk7fxdtqF-yS2svuMw5L6gl9nGCQeNudVyAf=s96-c','Khuon Sokheang',11.723186108997517,'PWC8+VP, Mukh Kampul, Cambodia',104.91674160308841,'Khuon Sokheang',NULL,NULL,'USER',NULL,NULL,NULL),(8,'N3T3D2',NULL,NULL,NULL,'2025-06-23T13:25:55.788818452',NULL,'eisifeng@gmail.com','Sifeng Ei',NULL,'https://res.cloudinary.com/dpq5cxfaa/image/upload/v1750685185/bontub/fsjoba3p32nzngyrvqqp.jpg','',NULL,NULL,NULL,'Sifeng Ei',NULL,NULL,'USER',NULL,NULL,NULL),(9,'NI8P40',NULL,NULL,NULL,'2025-06-23T13:38:46.631584205',NULL,'rothgamer07@gmail.com','Reth Roth',NULL,'https://lh3.googleusercontent.com/a/ACg8ocI7t4eKrlqRCOv6lvS47vTvNDd9B88w85MTQ9opOHskrCV4bFU=s96-c','Reth Roth',NULL,NULL,NULL,'Reth Roth',NULL,NULL,'USER',NULL,NULL,NULL),(10,'6PWY7T',NULL,NULL,NULL,'2025-06-25T03:07:39.731051506',NULL,'menglongart@gmail.com','Art Menglong',NULL,'https://lh3.googleusercontent.com/a/ACg8ocLb1VNIWIJLev0jLgS8YZorXniJ-1iXKwK-44J2yn9wVqU0SCdY=s96-c','Art Menglong',11.5664726,'794 Kampuchea Krom Blvd (128), Phnom Penh, Cambodia',104.8965575,'Art Menglong',NULL,NULL,'USER',NULL,NULL,NULL);
+-- /*!40000 ALTER TABLE `user` ENABLE KEYS */;
+-- UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
